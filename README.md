@@ -50,11 +50,6 @@ Building on Mac
 
 Requirements: Xcode (or Command Line Tools), CMake (brew install cmake), access to GitHub (CMake will download JUCE 8.0.15 automatically).
 
-cd SpeechLeveler
-cmake -B build
-cmake --build build --config Release --target SpeechLeveler_AU
-
-
 Thanks to COPY_PLUGIN_AFTER_BUILD, the Speech Leveler.component file will automatically be placed in
 ~/Library/Audio/Plug-Ins/Components/. The binary is universal (Apple Silicon + Intel).
 
