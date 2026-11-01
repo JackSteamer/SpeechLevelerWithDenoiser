@@ -54,12 +54,13 @@ Thanks to COPY_PLUGIN_AFTER_BUILD, the Speech Leveler.component file will automa
 ~/Library/Audio/Plug-Ins/Components/. The binary is universal (Apple Silicon + Intel).
 
 Installation and Usage in Final Cut Pro
-
-#brew install cmake
-#cd SpeechLeveler
-#cmake -B build
-#cmake --build build --config Release --target SpeechLeveler_AU
-
+(```)
+bash 
+brew install cmake
+cd SpeechLeveler
+cmake -B build
+cmake --build build --config Release --target SpeechLeveler_AU
+(```)
 
 1. Close Final Cut Pro and launch it again after building the plugin.
 2. Select a clip on the timeline.
