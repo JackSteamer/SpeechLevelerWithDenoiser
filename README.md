@@ -65,6 +65,7 @@ cd SpeechLeveler
 cmake -B build
 cmake --build build --config Release --target SpeechLeveler_AU
 
+
 1. Close Final Cut Pro and launch it again after building the plugin.
 2. Select a clip on the timeline.
 3. In the Effects browser, search for Speech Leveler (Audio category, Audio Units section) and drag it onto the clip.
