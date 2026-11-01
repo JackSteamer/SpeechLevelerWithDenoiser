@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+f6944a332043fda327637f407f41c051 SpeechLeveler_artefacts/JuceLibraryCode/SpeechLeveler_AU/PkgInfo
+cfe1addfc6c6c6d5769c5776bce61f3b SpeechLeveler_artefacts/JuceLibraryCode/SpeechLeveler_Standalone/PkgInfo

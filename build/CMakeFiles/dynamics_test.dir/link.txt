@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -arch x86_64 -mmacosx-version-min=11.0 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/dynamics_test.dir/Tests/test_dynamics.cpp.o -o dynamics_test
