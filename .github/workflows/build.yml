@@ -1,0 +1,29 @@
+name: Zbuduj instalator
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Konfiguracja
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Release
+
+      - name: Budowanie Audio Unit
+        run: cmake --build build --config Release --target SpeechLeveler_AU
+
+      - name: Instalator .pkg
+        run: |
+          chmod +x Installer/build_pkg.sh
+          ./Installer/build_pkg.sh
+
+      - name: Zapisz instalator
+        uses: actions/upload-artifact@v4
+        with:
+          name: SpeechLeveler-instalator
+          path: dist/*.pkg
