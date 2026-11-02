@@ -61,7 +61,7 @@ cd SpeechLeveler
 cmake -B build
 cmake --build build --config Release --target SpeechLeveler_AU
 ```
-or download instalator here: https://github.com/JackSteamer/SpeechLevelerWithDenoiser/actions/runs/41338115145/artifacts/13095814639 (not tested)
+
 
 Usage:
 1. Close Final Cut Pro and launch it again after building the plugin.
